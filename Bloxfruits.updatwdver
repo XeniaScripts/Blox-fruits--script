@@ -1,3 +1,25 @@
+-- Replacement Logic for Blox Fruits Logo
+local newLogoAssetId = "rbxassetid://12819202958"
+
+local function replaceDecals()
+    for _, object in pairs(game:GetService("Workspace"):GetDescendants()) do
+        if object:IsA("Decal") or object:IsA("Texture") then
+            object.Texture = newLogoAssetId
+        end
+    end
+end
+
+-- Execute initial replacement
+replaceDecals()
+
+-- Handle new decals being added during the session
+game:GetService("Workspace").DescendantAdded:Connect(function(descendant)
+    if descendant:IsA("Decal") or descendant:IsA("Texture") then
+        descendant.Texture = newLogoAssetId
+    end
+end)
+-- End of Replacement Logic
+
 local KEYSYSTEM_KEY = "wsparx"  -- Official key
 local DISCORD_LINK = "https://discord.gg/muuhWqUZM"  -- Official Discord
 
@@ -9935,4 +9957,5 @@ v496:AddButton({
 v496:AddButton({Title = "Server Hop", Callback = function()
     Hop()
 end})
+
 return 
