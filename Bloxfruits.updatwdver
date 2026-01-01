@@ -20,7 +20,7 @@ game:GetService("Workspace").DescendantAdded:Connect(function(descendant)
 end)
 -- End of Replacement Logic
 
-local KEYSYSTEM_KEY = "wsparx"  -- Official key
+local KEYSYSTEM_KEY = "Omarkxox"  -- Official key
 local DISCORD_LINK = "https://discord.gg/muuhWqUZM"  -- Official Discord
 
 local function showKeyPrompt()
@@ -66,7 +66,7 @@ local function showKeyPrompt()
     local title = Instance.new("TextLabel")
     title.Size = UDim2.new(1, 0, 0, 50)
     title.BackgroundTransparency = 1
-    title.Text = "sparxhub  KEYSYSTEM"
+    title.Text = "byte hack KEYSYSTEM"
     title.TextColor3 = Color3.fromRGB(180, 240, 255)
     title.Font = Enum.Font.GothamBold
     title.TextSize = 24
@@ -176,7 +176,7 @@ local function showKeyPrompt()
     local valid = false
     submitBtn.MouseButton1Click:Connect(function()
         if input.Text:lower() == KEYSYSTEM_KEY then
-            status.Text = "KEY ACCEPTED! Loading HOKALAZA..."
+            status.Text = "KEY ACCEPTED! Loading BYTE HUB."
             status.TextColor3 = Color3.fromRGB(100, 255, 100)
             task.wait(1.2)
             gui:Destroy()
@@ -197,7 +197,7 @@ end
 showKeyPrompt()
 -- =====================================================
 
--- [MAIN SCRIPT - HOKALAZA AUTO-FARM]
+-- [MAIN SCRIPT - BYTE HUB AUTO-FARM]
 
 
 hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function()
@@ -9959,3 +9959,4 @@ v496:AddButton({Title = "Server Hop", Callback = function()
 end})
 
 return 
+
